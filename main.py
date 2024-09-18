@@ -31,6 +31,16 @@ def messaje ():
 def get_movies():
     return movies_list
 
+@app.get('/movies'/{id}'',tags=["Movies"])
+def get_movies(id:int):
+    for item in movies_list:
+        if item['id']== id:
+            return item 
+    return[]
+
+
+
+
 
 
 #127.0.0.1:8000
