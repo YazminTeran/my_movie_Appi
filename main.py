@@ -98,10 +98,3 @@ def get_movies(id:int):
         if item['id']== id:
             return item 
     return[]
-
-
-
-
-
-
-#127.0.0.1:8000
